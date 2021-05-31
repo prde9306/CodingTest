@@ -1,1 +1,2 @@
 # CodingTest
+.DS_Store
