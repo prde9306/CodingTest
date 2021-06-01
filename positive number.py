@@ -17,6 +17,13 @@
 #     if n>0:
 #         break
 
-n=17
-id(17)
-id(n)
+#최댓값 구하는 함수
+from typing import Any, Sequence
+
+
+def max_of(a:Sequence)-> Any:
+    maximum = a[0]
+    for i in range(1, len(a)):
+        if a[i] > maximum:
+            maximum = a[i]
+    return maximum
