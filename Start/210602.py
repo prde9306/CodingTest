@@ -31,7 +31,7 @@ for w in input().split():
 	t=int(w)
 	arr.append(t) 
 
-s= [ str(w) for w in arr]
+s= [ str(w) for w in arr ]
 s.reverse()
 output =' '.join(s)
 print(output)
