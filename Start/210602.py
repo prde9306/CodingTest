@@ -22,7 +22,7 @@ arr = []
 for w in input().split():
 	t=int(w)
 	arr.append(t)
-"""
+
 n = int(input())
 
 arr = []
@@ -35,5 +35,6 @@ s= [ str(w) for w in arr ]
 s.reverse()
 output =' '.join(s)
 print(output)
+"""
 
 

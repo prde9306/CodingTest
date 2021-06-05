@@ -25,8 +25,8 @@ def card_conv(x: int, r: int) -> str:
          d+=dchar[x%r]
          x//=r
      return d[::-1]
-# 5 함수 사이에 인수 주고받기
-def sum+1ton(n):
+# 5 함수 사이에 인수 주고받기(immutable)
+def sum_1ton(n):
     """1부터 n까지 정수의 합"""
     s=0
     while n > 0:
@@ -35,3 +35,14 @@ def sum+1ton(n):
     return s
 x = int(input('x의 값을 입력하세요 : '))
 print(f'1부터 {x}까지 정수의 합은 {sum_1ton(x)}입니다.')
+
+#5-2) mutable -> list
+counter = 0
+for n in range(2, 1001):
+    for i in range(2, n):
+        counter +=1
+        if n%i == 0:
+            break
+    else:
+        print(n)
+print(f'나눗셈을 실행한 횟수:{counter}')
