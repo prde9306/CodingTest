@@ -16,7 +16,7 @@ def select_menu() ->Menu:
 q = FixedQueue(64)
 
 while True:
-    print(f'현재 데이터 개수 : {len(p) / {q.capacity}')
+    print(f'현재 데이터 개수 : {len(p)} / {q.capacity}')
     menu = select_menu()    #메뉴 선택
 
     if menu == Menu.인큐 : #인큐
