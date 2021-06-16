@@ -37,6 +37,7 @@ def merge_sort(a:MutableSequence)-> None:
     buff = [None] * n
     _merge_sort(a, 0, n-1)
     del buff
+    
 if __name__ =='__main__':
     print('병합 정렬을 수행합니다. ')
     num=int(input('원소 수를 입력하세요.: '))
@@ -50,4 +51,3 @@ if __name__ =='__main__':
 
     for i in range(num):
         print(f'x[{i}] = {x[i]}')
-        
