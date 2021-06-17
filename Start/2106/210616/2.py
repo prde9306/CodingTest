@@ -17,10 +17,11 @@
 #코드업 6056
 a,b = input().split()
 print(bool(int(a)) != bool(int(b)))
-#이렇게 안되나??
+#위에처럼 이렇게 안되나??
 a,b=input().split()
 c=bool(int(a))
 d=bool(int(b))
 print((c and (not d))or ((not c)and d))
 
+#코드업 6057할 차례
 
