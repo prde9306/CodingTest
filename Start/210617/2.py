@@ -16,3 +16,18 @@ def solution(name):
 #2. 첫 알파벳 종료후 다음알파벳이 A이면 왼쪽으로 1번 이동
 #3. 3번째부터는 무조건 오른쪽으로 이동1번 
 
+def solution(name):
+    answer = 0
+    min_move = len(name) - 1
+    next = 0
+    
+    for i, char in enumerate(name):
+        answer += min(ord(char) - ord('A'), ord('Z') - ord(char) + 1)
+        
+        next = i + 1
+        while next < len(name) and name[next] == 'A':
+            next += 1
+        
+        min_move = min(min_move, i + i + len(name) - next)
+    answer += min_move
+    return answer
