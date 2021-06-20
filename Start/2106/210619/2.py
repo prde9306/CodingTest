@@ -1,4 +1,4 @@
-# 프로그래머스 스택, 큐
+g# 프로그래머스 스택, 큐
 # 다리를 지나가는 트럭
 
 # 문제 : 최소 몇 초가 걸리나?
@@ -28,5 +28,3 @@ def solution(bridge_length, weight, truck_weights):
                 bridge.append(0)
     return sec
 
-#스택, 큐 문제만 몰아서 풀고 이런식으로 풀어## 최대한 빨리 실력 느는 방법
-#나동빈이 말한 유형 먼저
